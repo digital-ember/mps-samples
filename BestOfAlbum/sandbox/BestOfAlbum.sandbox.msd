@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language slang="l:f9825291-8623-4311-a120-29f48b64f2b5:BestOfAlbum" version="-1" />
+    <language slang="l:f9825291-8623-4311-a120-29f48b64f2b5:BestOfAlbum" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

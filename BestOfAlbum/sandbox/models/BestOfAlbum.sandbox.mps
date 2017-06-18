@@ -2,7 +2,7 @@
 <model ref="r:52f0ce2e-0c73-42a0-96f9-d1b895b2b749(BestOfAlbum.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="f9825291-8623-4311-a120-29f48b64f2b5" name="BestOfAlbum" version="-1" />
+    <use id="f9825291-8623-4311-a120-29f48b64f2b5" name="BestOfAlbum" version="0" />
   </languages>
   <imports>
     <import index="sghr" ref="r:52f0ce2e-0c73-42a0-96f9-d1b895b2b749(BestOfAlbum.sandbox)" />
@@ -41,13 +41,16 @@
     </node>
   </node>
   <node concept="SSsX3" id="6ywHitggyTK">
-    <node concept="SSsY5" id="6ywHitgnPAi" role="SSsY2">
+    <node concept="SSsY5" id="6ywHitgq1Nv" role="SSsY2">
       <ref role="SSsY4" node="6ywHitggyTB" resolve="C" />
     </node>
-    <node concept="SSsY5" id="6ywHitgnPAq" role="SSsY2">
+    <node concept="SSsY5" id="6ywHitgq1Nt" role="SSsY2">
+      <ref role="SSsY4" node="6ywHitggyTy" resolve="A" />
+    </node>
+    <node concept="SSsY5" id="6ywHitgq1Nx" role="SSsY2">
       <ref role="SSsY4" node="6ywHitggyT$" resolve="B" />
     </node>
-    <node concept="SSsY5" id="6ywHitgnPAw" role="SSsY2" />
+    <node concept="SSsY5" id="26ALFRAFOF4" role="SSsY2" />
   </node>
 </model>
 
