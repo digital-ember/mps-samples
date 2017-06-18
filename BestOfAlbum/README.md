@@ -16,3 +16,9 @@ The selection jumps between the "Song" nodes indefinietly
 
 ![Demo](http://g.recordit.co/3fctSsUbOv.gif)
 
+## possibe cause
+
+It happens when I add this line to the scope implementation in SongRef_Constraint at the very beginning:
+
+`if (referenceNode.isNull) { return null; }`
+
