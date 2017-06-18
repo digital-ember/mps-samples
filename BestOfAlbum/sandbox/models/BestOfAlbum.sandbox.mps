@@ -41,13 +41,15 @@
     </node>
   </node>
   <node concept="SSsX3" id="6ywHitggyTK">
-    <node concept="SSsY5" id="6ywHitgnPAi" role="SSsY2">
+    <node concept="SSsY5" id="6ywHitgpXCz" role="SSsY2">
       <ref role="SSsY4" node="6ywHitggyTB" resolve="C" />
     </node>
-    <node concept="SSsY5" id="6ywHitgnPAq" role="SSsY2">
+    <node concept="SSsY5" id="6ywHitgpXCB" role="SSsY2">
+      <ref role="SSsY4" node="6ywHitggyTy" resolve="A" />
+    </node>
+    <node concept="SSsY5" id="6ywHitgpXC_" role="SSsY2">
       <ref role="SSsY4" node="6ywHitggyT$" resolve="B" />
     </node>
-    <node concept="SSsY5" id="6ywHitgnPAw" role="SSsY2" />
   </node>
 </model>
 
