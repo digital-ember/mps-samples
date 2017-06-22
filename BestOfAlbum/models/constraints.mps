@@ -35,6 +35,7 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -188,6 +189,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -208,290 +216,321 @@
       <ref role="1N5Vy1" to="2b8u:6ywHitggnEz" resolve="ref" />
       <node concept="3dgokm" id="6ywHitghicz" role="1N6uqs">
         <node concept="3clFbS" id="6ywHitghic_" role="2VODD2">
-          <node concept="3cpWs8" id="6ywHitgnJQ3" role="3cqZAp">
-            <node concept="3cpWsn" id="6ywHitgnJQ4" role="3cpWs9">
-              <property role="TrG5h" value="scopeAllAvailable" />
-              <node concept="3uibUv" id="6ywHitgnJQ5" role="1tU5fm">
-                <ref role="3uigEE" to="o8zo:VXQuBhO0U" resolve="ModelsScope" />
-              </node>
-              <node concept="2ShNRf" id="6ywHitgnL4V" role="33vP2m">
-                <node concept="1pGfFk" id="6ywHitgnLnU" role="2ShVmc">
-                  <ref role="37wK5l" to="o8zo:4k9eBec$QVW" resolve="ModelPlusImportedScope" />
-                  <node concept="2OqwBi" id="6ywHitgnLYR" role="37wK5m">
-                    <node concept="2rP1CM" id="6ywHitgnLxI" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="6ywHitgnMgn" role="2OqNvi" />
-                  </node>
-                  <node concept="3clFbT" id="6ywHitgnMs7" role="37wK5m">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                  <node concept="35c_gC" id="6ywHitgnMCc" role="37wK5m">
-                    <ref role="35c_gD" to="2b8u:6ywHitggnD_" resolve="Song" />
+          <node concept="3cpWs6" id="1XIC6gSfEz6" role="3cqZAp">
+            <node concept="10Nm6u" id="1XIC6gSfEMc" role="3cqZAk" />
+          </node>
+          <node concept="3SKdUt" id="1XIC6gSfE0_" role="3cqZAp">
+            <node concept="3SKdUq" id="1XIC6gSfE0B" role="3SKWNk">
+              <property role="3SKdUp" value="///////////////////////////////////" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="1XIC6gSfCo5" role="3cqZAp">
+            <node concept="3SKdUq" id="1XIC6gSfCo7" role="3SKWNk">
+              <property role="3SKdUp" value="SINCE WE CANNOT CUSTOMIZE A CONSTRAINT'S ERROR MESSAGE, WE USE A SUBSTITUION_MENU INSTEAD" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="1XIC6gSfEhc" role="3cqZAp">
+            <node concept="3SKdUq" id="1XIC6gSfEhd" role="3SKWNk">
+              <property role="3SKdUp" value="///////////////////////////////////" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="1XIC6gSfDgW" role="3cqZAp" />
+          <node concept="1X3_iC" id="1XIC6gSfCT6" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs8" id="6ywHitgnJQ3" role="8Wnug">
+              <node concept="3cpWsn" id="6ywHitgnJQ4" role="3cpWs9">
+                <property role="TrG5h" value="scopeAllAvailable" />
+                <node concept="3uibUv" id="6ywHitgnJQ5" role="1tU5fm">
+                  <ref role="3uigEE" to="o8zo:VXQuBhO0U" resolve="ModelsScope" />
+                </node>
+                <node concept="2ShNRf" id="6ywHitgnL4V" role="33vP2m">
+                  <node concept="1pGfFk" id="6ywHitgnLnU" role="2ShVmc">
+                    <ref role="37wK5l" to="o8zo:4k9eBec$QVW" resolve="ModelPlusImportedScope" />
+                    <node concept="2OqwBi" id="6ywHitgnLYR" role="37wK5m">
+                      <node concept="2rP1CM" id="6ywHitgnLxI" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="6ywHitgnMgn" role="2OqNvi" />
+                    </node>
+                    <node concept="3clFbT" id="6ywHitgnMs7" role="37wK5m">
+                      <property role="3clFbU" value="false" />
+                    </node>
+                    <node concept="35c_gC" id="6ywHitgnMCc" role="37wK5m">
+                      <ref role="35c_gD" to="2b8u:6ywHitggnD_" resolve="Song" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="6ywHitgkPvN" role="3cqZAp" />
-          <node concept="3cpWs6" id="6ywHitgkMSD" role="3cqZAp">
-            <node concept="2ShNRf" id="6ywHitgkPXf" role="3cqZAk">
-              <node concept="YeOm9" id="6ywHitgl8ak" role="2ShVmc">
-                <node concept="1Y3b0j" id="6ywHitgl8an" role="YeSDq">
-                  <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="o8zo:3rV3sBXetA0" resolve="FilteringScope" />
-                  <ref role="37wK5l" to="o8zo:3rV3sBXetA2" resolve="FilteringScope" />
-                  <node concept="3Tm1VV" id="6ywHitgl8ao" role="1B3o_S" />
-                  <node concept="37vLTw" id="6ywHitgnN5G" role="37wK5m">
-                    <ref role="3cqZAo" node="6ywHitgnJQ4" resolve="scopeAllAvailable" />
-                  </node>
-                  <node concept="3clFb_" id="6ywHitgl8Nc" role="jymVt">
-                    <property role="TrG5h" value="isExcluded" />
-                    <property role="1EzhhJ" value="false" />
-                    <node concept="P$JXv" id="6ywHitgslxK" role="lGtFl">
-                      <node concept="TZ5HA" id="6ywHitgslxL" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgslxM" role="1dT_Ay">
-                          <property role="1dT_AB" value="We filter nodes that are already referenced by *other* nodes in the list." />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgslZW" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgslZX" role="1dT_Ay">
-                          <property role="1dT_AB" value="This means we need to mind the context the scope implemnetation is called for:" />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgsm54" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgsm55" role="1dT_Ay">
-                          <property role="1dT_AB" value="referenceNode.isNull: node we want to calculate the scoping for does not yet exist (e.g. substitution menu call)" />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgsmdh" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgsmdi" role="1dT_Ay">
-                          <property role="1dT_AB" value="referenceNode.isNotNull: node is in the AST" />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgsmqQ" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgsmqR" role="1dT_Ay">
-                          <property role="1dT_AB" value="" />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgsmst" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgsmsu" role="1dT_Ay">
-                          <property role="1dT_AB" value="for the first case we need to make sure that we do not exclude the node that matches the node that might be" />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgsmDv" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgsmDw" role="1dT_Ay">
-                          <property role="1dT_AB" value="at the position the substitution menu is called for." />
-                        </node>
-                      </node>
-                      <node concept="TZ5HA" id="6ywHitgsmHA" role="TZ5H$">
-                        <node concept="1dT_AC" id="6ywHitgsmHB" role="1dT_Ay">
-                          <property role="1dT_AB" value="In all other cases, we exclude nodes that have already been referenced by other nodeRefs." />
-                        </node>
-                      </node>
-                      <node concept="TUZQ0" id="6ywHitgslxN" role="3nqlJM">
-                        <property role="TUZQ4" value="node we need to decide for whether or not it is in the current Scope" />
-                        <node concept="zr_55" id="6ywHitgslxP" role="zr_5Q">
-                          <ref role="zr_51" node="6ywHitgl8Ni" resolve="node" />
-                        </node>
-                      </node>
-                      <node concept="x79VA" id="6ywHitgslxQ" role="3nqlJM">
-                        <property role="x79VB" value="true iff node is excluded, false otherwise" />
-                      </node>
+          <node concept="1X3_iC" id="1XIC6gSfCT7" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbH" id="6ywHitgkPvN" role="8Wnug" />
+          </node>
+          <node concept="1X3_iC" id="1XIC6gSfCT8" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs6" id="6ywHitgkMSD" role="8Wnug">
+              <node concept="2ShNRf" id="6ywHitgkPXf" role="3cqZAk">
+                <node concept="YeOm9" id="6ywHitgl8ak" role="2ShVmc">
+                  <node concept="1Y3b0j" id="6ywHitgl8an" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="o8zo:3rV3sBXetA0" resolve="FilteringScope" />
+                    <ref role="37wK5l" to="o8zo:3rV3sBXetA2" resolve="FilteringScope" />
+                    <node concept="3Tm1VV" id="6ywHitgl8ao" role="1B3o_S" />
+                    <node concept="37vLTw" id="6ywHitgnN5G" role="37wK5m">
+                      <ref role="3cqZAo" node="6ywHitgnJQ4" resolve="scopeAllAvailable" />
                     </node>
-                    <node concept="10P_77" id="6ywHitgl8Nd" role="3clF45" />
-                    <node concept="3Tm1VV" id="6ywHitgl8Ne" role="1B3o_S" />
-                    <node concept="37vLTG" id="6ywHitgl8Ni" role="3clF46">
-                      <property role="TrG5h" value="node" />
-                      <node concept="3Tqbb2" id="6ywHitgl8Nj" role="1tU5fm" />
-                    </node>
-                    <node concept="3clFbS" id="6ywHitgl8Nl" role="3clF47">
-                      <node concept="3cpWs8" id="6ywHitgnDSw" role="3cqZAp">
-                        <node concept="3cpWsn" id="6ywHitgnDSz" role="3cpWs9">
-                          <property role="TrG5h" value="bestOfAlbum" />
-                          <node concept="3Tqbb2" id="6ywHitgnDSu" role="1tU5fm">
-                            <ref role="ehGHo" to="2b8u:6ywHitggnD$" resolve="BestOfAlbum" />
+                    <node concept="3clFb_" id="6ywHitgl8Nc" role="jymVt">
+                      <property role="TrG5h" value="isExcluded" />
+                      <property role="1EzhhJ" value="false" />
+                      <node concept="P$JXv" id="6ywHitgslxK" role="lGtFl">
+                        <node concept="TZ5HA" id="6ywHitgslxL" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgslxM" role="1dT_Ay">
+                            <property role="1dT_AB" value="We filter nodes that are already referenced by *other* nodes in the list." />
                           </node>
-                          <node concept="2OqwBi" id="6ywHitgnQvM" role="33vP2m">
-                            <node concept="2rP1CM" id="6ywHitgnEm_" role="2Oq$k0" />
-                            <node concept="2Xjw5R" id="6ywHitgnQZa" role="2OqNvi">
-                              <node concept="1xMEDy" id="6ywHitgnQZc" role="1xVPHs">
-                                <node concept="chp4Y" id="6ywHitgnRfM" role="ri$Ld">
-                                  <ref role="cht4Q" to="2b8u:6ywHitggnD$" resolve="BestOfAlbum" />
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgslZW" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgslZX" role="1dT_Ay">
+                            <property role="1dT_AB" value="This means we need to mind the context the scope implemnetation is called for:" />
+                          </node>
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgsm54" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgsm55" role="1dT_Ay">
+                            <property role="1dT_AB" value="referenceNode.isNull: node we want to calculate the scoping for does not yet exist (e.g. substitution menu call)" />
+                          </node>
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgsmdh" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgsmdi" role="1dT_Ay">
+                            <property role="1dT_AB" value="referenceNode.isNotNull: node is in the AST" />
+                          </node>
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgsmqQ" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgsmqR" role="1dT_Ay">
+                            <property role="1dT_AB" value="" />
+                          </node>
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgsmst" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgsmsu" role="1dT_Ay">
+                            <property role="1dT_AB" value="for the first case we need to make sure that we do not exclude the node that matches the node that might be" />
+                          </node>
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgsmDv" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgsmDw" role="1dT_Ay">
+                            <property role="1dT_AB" value="at the position the substitution menu is called for." />
+                          </node>
+                        </node>
+                        <node concept="TZ5HA" id="6ywHitgsmHA" role="TZ5H$">
+                          <node concept="1dT_AC" id="6ywHitgsmHB" role="1dT_Ay">
+                            <property role="1dT_AB" value="In all other cases, we exclude nodes that have already been referenced by other nodeRefs." />
+                          </node>
+                        </node>
+                        <node concept="TUZQ0" id="6ywHitgslxN" role="3nqlJM">
+                          <property role="TUZQ4" value="node we need to decide for whether or not it is in the current Scope" />
+                          <node concept="zr_55" id="6ywHitgslxP" role="zr_5Q">
+                            <ref role="zr_51" node="6ywHitgl8Ni" resolve="node" />
+                          </node>
+                        </node>
+                        <node concept="x79VA" id="6ywHitgslxQ" role="3nqlJM">
+                          <property role="x79VB" value="true iff node is excluded, false otherwise" />
+                        </node>
+                      </node>
+                      <node concept="10P_77" id="6ywHitgl8Nd" role="3clF45" />
+                      <node concept="3Tm1VV" id="6ywHitgl8Ne" role="1B3o_S" />
+                      <node concept="37vLTG" id="6ywHitgl8Ni" role="3clF46">
+                        <property role="TrG5h" value="node" />
+                        <node concept="3Tqbb2" id="6ywHitgl8Nj" role="1tU5fm" />
+                      </node>
+                      <node concept="3clFbS" id="6ywHitgl8Nl" role="3clF47">
+                        <node concept="3cpWs8" id="6ywHitgnDSw" role="3cqZAp">
+                          <node concept="3cpWsn" id="6ywHitgnDSz" role="3cpWs9">
+                            <property role="TrG5h" value="bestOfAlbum" />
+                            <node concept="3Tqbb2" id="6ywHitgnDSu" role="1tU5fm">
+                              <ref role="ehGHo" to="2b8u:6ywHitggnD$" resolve="BestOfAlbum" />
+                            </node>
+                            <node concept="2OqwBi" id="6ywHitgnQvM" role="33vP2m">
+                              <node concept="2rP1CM" id="6ywHitgnEm_" role="2Oq$k0" />
+                              <node concept="2Xjw5R" id="6ywHitgnQZa" role="2OqNvi">
+                                <node concept="1xMEDy" id="6ywHitgnQZc" role="1xVPHs">
+                                  <node concept="chp4Y" id="6ywHitgnRfM" role="ri$Ld">
+                                    <ref role="cht4Q" to="2b8u:6ywHitggnD$" resolve="BestOfAlbum" />
+                                  </node>
+                                </node>
+                                <node concept="1xIGOp" id="6ywHitgnRKS" role="1xVPHs" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="6ywHitgqVJC" role="3cqZAp" />
+                        <node concept="3SKdUt" id="6ywHitgs6AS" role="3cqZAp">
+                          <node concept="3SKdUq" id="6ywHitgs6AU" role="3SKWNk">
+                            <property role="3SKdUp" value="this branch is executed when a new node is supposed to be inserted (i.e. referenceNode.isNull)" />
+                          </node>
+                        </node>
+                        <node concept="3SKdUt" id="6ywHitgs7KG" role="3cqZAp">
+                          <node concept="3SKdUq" id="6ywHitgs7KI" role="3SKWNk">
+                            <property role="3SKdUp" value="we want to be sure that the substitution menu offers the node at the current context position" />
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="6ywHitgs0Qh" role="3cqZAp">
+                          <node concept="3clFbS" id="6ywHitgs0Qj" role="3clFbx">
+                            <node concept="3SKdUt" id="6ywHitgsbpp" role="3cqZAp">
+                              <node concept="3SKdUq" id="6ywHitgsbpr" role="3SKWNk">
+                                <property role="3SKdUp" value="get the node at the current position" />
+                              </node>
+                            </node>
+                            <node concept="3cpWs8" id="6ywHitgs1Co" role="3cqZAp">
+                              <node concept="3cpWsn" id="6ywHitgs1Cr" role="3cpWs9">
+                                <property role="TrG5h" value="nodeInContext" />
+                                <node concept="3Tqbb2" id="6ywHitgs1Cm" role="1tU5fm">
+                                  <ref role="ehGHo" to="2b8u:6ywHitggnEy" resolve="SongRef" />
+                                </node>
+                                <node concept="1y4W85" id="6ywHitgs1Qe" role="33vP2m">
+                                  <node concept="$OBjv" id="6ywHitgs1Qf" role="1y58nS" />
+                                  <node concept="2OqwBi" id="6ywHitgs1Qg" role="1y566C">
+                                    <node concept="37vLTw" id="6ywHitgs1Qh" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6ywHitgnDSz" resolve="bestOfAlbum" />
+                                    </node>
+                                    <node concept="3Tsc0h" id="6ywHitgs1Qi" role="2OqNvi">
+                                      <ref role="3TtcxE" to="2b8u:6ywHitggnE_" resolve="songRefList" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="1xIGOp" id="6ywHitgnRKS" role="1xVPHs" />
                             </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbH" id="6ywHitgqVJC" role="3cqZAp" />
-                      <node concept="3SKdUt" id="6ywHitgs6AS" role="3cqZAp">
-                        <node concept="3SKdUq" id="6ywHitgs6AU" role="3SKWNk">
-                          <property role="3SKdUp" value="this branch is executed when a new node is supposed to be inserted (i.e. referenceNode.isNull)" />
-                        </node>
-                      </node>
-                      <node concept="3SKdUt" id="6ywHitgs7KG" role="3cqZAp">
-                        <node concept="3SKdUq" id="6ywHitgs7KI" role="3SKWNk">
-                          <property role="3SKdUp" value="we want to be sure that the substitution menu offers the node at the current context position" />
-                        </node>
-                      </node>
-                      <node concept="3clFbJ" id="6ywHitgs0Qh" role="3cqZAp">
-                        <node concept="3clFbS" id="6ywHitgs0Qj" role="3clFbx">
-                          <node concept="3SKdUt" id="6ywHitgsbpp" role="3cqZAp">
-                            <node concept="3SKdUq" id="6ywHitgsbpr" role="3SKWNk">
-                              <property role="3SKdUp" value="get the node at the current position" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs8" id="6ywHitgs1Co" role="3cqZAp">
-                            <node concept="3cpWsn" id="6ywHitgs1Cr" role="3cpWs9">
-                              <property role="TrG5h" value="nodeInContext" />
-                              <node concept="3Tqbb2" id="6ywHitgs1Cm" role="1tU5fm">
-                                <ref role="ehGHo" to="2b8u:6ywHitggnEy" resolve="SongRef" />
+                            <node concept="3clFbH" id="6ywHitgs9SJ" role="3cqZAp" />
+                            <node concept="3SKdUt" id="6ywHitgscw9" role="3cqZAp">
+                              <node concept="3SKdUq" id="6ywHitgscwb" role="3SKWNk">
+                                <property role="3SKdUp" value="if there is a node at the context position the user invoked the substitution menu in" />
                               </node>
-                              <node concept="1y4W85" id="6ywHitgs1Qe" role="33vP2m">
-                                <node concept="$OBjv" id="6ywHitgs1Qf" role="1y58nS" />
-                                <node concept="2OqwBi" id="6ywHitgs1Qg" role="1y566C">
-                                  <node concept="37vLTw" id="6ywHitgs1Qh" role="2Oq$k0">
+                            </node>
+                            <node concept="3SKdUt" id="6ywHitgseEU" role="3cqZAp">
+                              <node concept="3SKdUq" id="6ywHitgseEW" role="3SKWNk">
+                                <property role="3SKdUp" value="and if this node points to the current node we might want to filter (songCandidate)" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="6ywHitgsdAS" role="3cqZAp">
+                              <node concept="3SKdUq" id="6ywHitgsdAU" role="3SKWNk">
+                                <property role="3SKdUp" value="then don't exclude it!" />
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="6ywHitgs23u" role="3cqZAp">
+                              <node concept="3clFbS" id="6ywHitgs23w" role="3clFbx">
+                                <node concept="3cpWs6" id="6ywHitgs4ZX" role="3cqZAp">
+                                  <node concept="3clFbT" id="6ywHitgs53l" role="3cqZAk">
+                                    <property role="3clFbU" value="false" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="1Wc70l" id="6ywHitgs3Ct" role="3clFbw">
+                                <node concept="3clFbC" id="6ywHitgs4yO" role="3uHU7w">
+                                  <node concept="37vLTw" id="6ywHitgs4Ks" role="3uHU7w">
+                                    <ref role="3cqZAo" node="6ywHitgl8Ni" resolve="node" />
+                                  </node>
+                                  <node concept="2OqwBi" id="6ywHitgs4cv" role="3uHU7B">
+                                    <node concept="37vLTw" id="6ywHitgs3Xn" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6ywHitgs1Cr" resolve="nodeInContext" />
+                                    </node>
+                                    <node concept="3TrEf2" id="6ywHitgs4p3" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="2b8u:6ywHitggnEz" resolve="ref" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="6ywHitgs2oO" role="3uHU7B">
+                                  <node concept="37vLTw" id="6ywHitgs2bC" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6ywHitgs1Cr" resolve="nodeInContext" />
+                                  </node>
+                                  <node concept="3x8VRR" id="6ywHitgs2Fb" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1Wc70l" id="6ywHitgrN_t" role="3clFbw">
+                            <node concept="2OqwBi" id="6ywHitgrOnT" role="3uHU7B">
+                              <node concept="3kakTB" id="6ywHitgrNWG" role="2Oq$k0" />
+                              <node concept="3w_OXm" id="6ywHitgrOGs" role="2OqNvi" />
+                            </node>
+                            <node concept="3eOVzh" id="6ywHitgrwcu" role="3uHU7w">
+                              <node concept="2OqwBi" id="6ywHitgrznf" role="3uHU7w">
+                                <node concept="2OqwBi" id="6ywHitgrwOZ" role="2Oq$k0">
+                                  <node concept="37vLTw" id="6ywHitgrwlQ" role="2Oq$k0">
                                     <ref role="3cqZAo" node="6ywHitgnDSz" resolve="bestOfAlbum" />
                                   </node>
-                                  <node concept="3Tsc0h" id="6ywHitgs1Qi" role="2OqNvi">
+                                  <node concept="3Tsc0h" id="6ywHitgrxaT" role="2OqNvi">
                                     <ref role="3TtcxE" to="2b8u:6ywHitggnE_" resolve="songRefList" />
                                   </node>
                                 </node>
+                                <node concept="34oBXx" id="6ywHitgrAEa" role="2OqNvi" />
                               </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbH" id="6ywHitgs9SJ" role="3cqZAp" />
-                          <node concept="3SKdUt" id="6ywHitgscw9" role="3cqZAp">
-                            <node concept="3SKdUq" id="6ywHitgscwb" role="3SKWNk">
-                              <property role="3SKdUp" value="if there is a node at the context position the user invoked the substitution menu in" />
-                            </node>
-                          </node>
-                          <node concept="3SKdUt" id="6ywHitgseEU" role="3cqZAp">
-                            <node concept="3SKdUq" id="6ywHitgseEW" role="3SKWNk">
-                              <property role="3SKdUp" value="and if this node points to the current node we might want to filter (songCandidate)" />
-                            </node>
-                          </node>
-                          <node concept="3SKdUt" id="6ywHitgsdAS" role="3cqZAp">
-                            <node concept="3SKdUq" id="6ywHitgsdAU" role="3SKWNk">
-                              <property role="3SKdUp" value="then don't exclude it!" />
-                            </node>
-                          </node>
-                          <node concept="3clFbJ" id="6ywHitgs23u" role="3cqZAp">
-                            <node concept="3clFbS" id="6ywHitgs23w" role="3clFbx">
-                              <node concept="3cpWs6" id="6ywHitgs4ZX" role="3cqZAp">
-                                <node concept="3clFbT" id="6ywHitgs53l" role="3cqZAk">
-                                  <property role="3clFbU" value="false" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="1Wc70l" id="6ywHitgs3Ct" role="3clFbw">
-                              <node concept="3clFbC" id="6ywHitgs4yO" role="3uHU7w">
-                                <node concept="37vLTw" id="6ywHitgs4Ks" role="3uHU7w">
-                                  <ref role="3cqZAo" node="6ywHitgl8Ni" resolve="node" />
-                                </node>
-                                <node concept="2OqwBi" id="6ywHitgs4cv" role="3uHU7B">
-                                  <node concept="37vLTw" id="6ywHitgs3Xn" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="6ywHitgs1Cr" resolve="nodeInContext" />
-                                  </node>
-                                  <node concept="3TrEf2" id="6ywHitgs4p3" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="2b8u:6ywHitggnEz" resolve="ref" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="2OqwBi" id="6ywHitgs2oO" role="3uHU7B">
-                                <node concept="37vLTw" id="6ywHitgs2bC" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6ywHitgs1Cr" resolve="nodeInContext" />
-                                </node>
-                                <node concept="3x8VRR" id="6ywHitgs2Fb" role="2OqNvi" />
-                              </node>
+                              <node concept="$OBjv" id="6ywHitgruGs" role="3uHU7B" />
                             </node>
                           </node>
                         </node>
-                        <node concept="1Wc70l" id="6ywHitgrN_t" role="3clFbw">
-                          <node concept="2OqwBi" id="6ywHitgrOnT" role="3uHU7B">
-                            <node concept="3kakTB" id="6ywHitgrNWG" role="2Oq$k0" />
-                            <node concept="3w_OXm" id="6ywHitgrOGs" role="2OqNvi" />
+                        <node concept="3clFbH" id="6ywHitgs5yM" role="3cqZAp" />
+                        <node concept="3SKdUt" id="6ywHitgsgke" role="3cqZAp">
+                          <node concept="3SKdUq" id="6ywHitgsgkg" role="3SKWNk">
+                            <property role="3SKdUp" value="exclude the candidate if" />
                           </node>
-                          <node concept="3eOVzh" id="6ywHitgrwcu" role="3uHU7w">
-                            <node concept="2OqwBi" id="6ywHitgrznf" role="3uHU7w">
-                              <node concept="2OqwBi" id="6ywHitgrwOZ" role="2Oq$k0">
-                                <node concept="37vLTw" id="6ywHitgrwlQ" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6ywHitgnDSz" resolve="bestOfAlbum" />
-                                </node>
-                                <node concept="3Tsc0h" id="6ywHitgrxaT" role="2OqNvi">
-                                  <ref role="3TtcxE" to="2b8u:6ywHitggnE_" resolve="songRefList" />
-                                </node>
+                        </node>
+                        <node concept="3SKdUt" id="6ywHitgsiml" role="3cqZAp">
+                          <node concept="3SKdUq" id="6ywHitgsimn" role="3SKWNk">
+                            <property role="3SKdUp" value="... we are not looking at a used node that is our current referenceNode (i.e. the node is allowed once!)" />
+                          </node>
+                        </node>
+                        <node concept="3SKdUt" id="6ywHitgsjmY" role="3cqZAp">
+                          <node concept="3SKdUq" id="6ywHitgsjn0" role="3SKWNk">
+                            <property role="3SKdUp" value="... and there is a node that already points to our candidate" />
+                          </node>
+                        </node>
+                        <node concept="3cpWs6" id="6ywHitgl9mt" role="3cqZAp">
+                          <node concept="2OqwBi" id="6ywHitglkt6" role="3cqZAk">
+                            <node concept="2OqwBi" id="6ywHitglc0u" role="2Oq$k0">
+                              <node concept="37vLTw" id="6ywHitgpwHg" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6ywHitgnDSz" resolve="bestOfAlbum" />
                               </node>
-                              <node concept="34oBXx" id="6ywHitgrAEa" role="2OqNvi" />
+                              <node concept="3Tsc0h" id="6ywHitglcwf" role="2OqNvi">
+                                <ref role="3TtcxE" to="2b8u:6ywHitggnE_" resolve="songRefList" />
+                              </node>
                             </node>
-                            <node concept="$OBjv" id="6ywHitgruGs" role="3uHU7B" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbH" id="6ywHitgs5yM" role="3cqZAp" />
-                      <node concept="3SKdUt" id="6ywHitgsgke" role="3cqZAp">
-                        <node concept="3SKdUq" id="6ywHitgsgkg" role="3SKWNk">
-                          <property role="3SKdUp" value="exclude the candidate if" />
-                        </node>
-                      </node>
-                      <node concept="3SKdUt" id="6ywHitgsiml" role="3cqZAp">
-                        <node concept="3SKdUq" id="6ywHitgsimn" role="3SKWNk">
-                          <property role="3SKdUp" value="... we are not looking at a used node that is our current referenceNode (i.e. the node is allowed once!)" />
-                        </node>
-                      </node>
-                      <node concept="3SKdUt" id="6ywHitgsjmY" role="3cqZAp">
-                        <node concept="3SKdUq" id="6ywHitgsjn0" role="3SKWNk">
-                          <property role="3SKdUp" value="... and there is a node that already points to our candidate" />
-                        </node>
-                      </node>
-                      <node concept="3cpWs6" id="6ywHitgl9mt" role="3cqZAp">
-                        <node concept="2OqwBi" id="6ywHitglkt6" role="3cqZAk">
-                          <node concept="2OqwBi" id="6ywHitglc0u" role="2Oq$k0">
-                            <node concept="37vLTw" id="6ywHitgpwHg" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6ywHitgnDSz" resolve="bestOfAlbum" />
-                            </node>
-                            <node concept="3Tsc0h" id="6ywHitglcwf" role="2OqNvi">
-                              <ref role="3TtcxE" to="2b8u:6ywHitggnE_" resolve="songRefList" />
-                            </node>
-                          </node>
-                          <node concept="2HwmR7" id="6ywHitgpxEz" role="2OqNvi">
-                            <node concept="1bVj0M" id="6ywHitgpxE_" role="23t8la">
-                              <node concept="3clFbS" id="6ywHitgpxEA" role="1bW5cS">
-                                <node concept="3clFbF" id="6ywHitgq_g4" role="3cqZAp">
-                                  <node concept="1Wc70l" id="6ywHitgqud2" role="3clFbG">
-                                    <node concept="3clFbC" id="6ywHitgqvCT" role="3uHU7w">
-                                      <node concept="37vLTw" id="6ywHitgqw3c" role="3uHU7w">
-                                        <ref role="3cqZAo" node="6ywHitgl8Ni" resolve="node" />
+                            <node concept="2HwmR7" id="6ywHitgpxEz" role="2OqNvi">
+                              <node concept="1bVj0M" id="6ywHitgpxE_" role="23t8la">
+                                <node concept="3clFbS" id="6ywHitgpxEA" role="1bW5cS">
+                                  <node concept="3clFbF" id="6ywHitgq_g4" role="3cqZAp">
+                                    <node concept="1Wc70l" id="6ywHitgqud2" role="3clFbG">
+                                      <node concept="3clFbC" id="6ywHitgqvCT" role="3uHU7w">
+                                        <node concept="37vLTw" id="6ywHitgqw3c" role="3uHU7w">
+                                          <ref role="3cqZAo" node="6ywHitgl8Ni" resolve="node" />
+                                        </node>
+                                        <node concept="2OqwBi" id="6ywHitgqv6o" role="3uHU7B">
+                                          <node concept="37vLTw" id="6ywHitgquB9" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="6ywHitgpxEB" resolve="songRefUsed" />
+                                          </node>
+                                          <node concept="3TrEf2" id="6ywHitgqvoe" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="2b8u:6ywHitggnEz" resolve="ref" />
+                                          </node>
+                                        </node>
                                       </node>
-                                      <node concept="2OqwBi" id="6ywHitgqv6o" role="3uHU7B">
-                                        <node concept="37vLTw" id="6ywHitgquB9" role="2Oq$k0">
+                                      <node concept="3y3z36" id="6ywHitgq8UX" role="3uHU7B">
+                                        <node concept="3kakTB" id="6ywHitgq55c" role="3uHU7B" />
+                                        <node concept="37vLTw" id="6ywHitgq64v" role="3uHU7w">
                                           <ref role="3cqZAo" node="6ywHitgpxEB" resolve="songRefUsed" />
                                         </node>
-                                        <node concept="3TrEf2" id="6ywHitgqvoe" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="2b8u:6ywHitggnEz" resolve="ref" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="3y3z36" id="6ywHitgq8UX" role="3uHU7B">
-                                      <node concept="3kakTB" id="6ywHitgq55c" role="3uHU7B" />
-                                      <node concept="37vLTw" id="6ywHitgq64v" role="3uHU7w">
-                                        <ref role="3cqZAo" node="6ywHitgpxEB" resolve="songRefUsed" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                              </node>
-                              <node concept="Rh6nW" id="6ywHitgpxEB" role="1bW2Oz">
-                                <property role="TrG5h" value="songRefUsed" />
-                                <node concept="2jxLKc" id="6ywHitgpxEC" role="1tU5fm" />
+                                <node concept="Rh6nW" id="6ywHitgpxEB" role="1bW2Oz">
+                                  <property role="TrG5h" value="songRefUsed" />
+                                  <node concept="2jxLKc" id="6ywHitgpxEC" role="1tU5fm" />
+                                </node>
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="2AHcQZ" id="6ywHitgl8Nm" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      <node concept="2AHcQZ" id="6ywHitgl8Nm" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
                     </node>
                   </node>
                 </node>
